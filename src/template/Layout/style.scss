@@ -1,0 +1,36 @@
+#default-template {
+  .view {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 32px;
+    min-height: 100vh;
+
+    header {
+      box-shadow: 2px 1px 8px 0px #00000020;
+    }
+
+    header nav,
+    main {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 999px) {
+  #default-template {
+    .view {
+      header nav,
+      main {
+        padding-right: 1em;
+        padding-left: 1em;
+      }
+
+      main {
+        max-width: 100%;
+      }
+    }
+  }
+}

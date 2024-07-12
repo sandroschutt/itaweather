@@ -1,0 +1,92 @@
+.weather-daily-forecast-card--body.card-body {
+  padding: 0;
+}
+
+.weather-daily-forecast-table {
+  width: 100%;
+
+  .__first-row {
+    border-left: 6px solid var(--bs-primary);
+    background-color: #0dcaf02e;
+  }
+
+  .__table-row {
+    border-bottom: 1px solid #cecece;
+
+    td {
+      div {
+        padding: 8px 16px;
+      }
+
+      .__temperatures {
+        p {
+          margin-bottom: 0;
+        }
+
+        .__daily-icon,
+        .__daily-max {
+          font-size: 2em;
+        }
+
+        .__daily-icon {
+          color: #7e7e7e;
+        }
+
+        .__daily-max {
+          font-weight: 500;
+        }
+
+        .__daily-min {
+          align-self: end;
+          font-size: 1.4em;
+          color: #7e7e7e;
+        }
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: #0dcaf02e;
+      transition: .2s;
+    }
+
+    &:active {
+      background-color: #6ee7ff2e;
+    }
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .weather-daily-forecast-card--body {
+    overflow-x: auto;
+  }
+
+  .weather-daily-forecast-table {
+    .__weekday-date {
+      h5 {
+        font-size: 1em;
+        margin-bottom: 0;
+      }
+    }
+
+    .__weekday-date p,
+    .__daily-description {
+      font-size: 0.8em;
+    }
+
+    .__temperatures {
+      .__daily-icon,
+      .__daily-max {
+        font-size: 1.5em!important;
+      }
+
+      .__daily-min {
+        font-size: 1em!important;
+      }
+    }
+
+    .__daily-description {
+      font-size: .8em!important;
+    }
+  }
+}

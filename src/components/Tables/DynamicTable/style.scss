@@ -1,0 +1,44 @@
+$dynamicTableBorderColor: .5px solid #cecece;
+$dynamicTableDefaultPadding: 12px;
+
+.dynamic-table {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+
+  thead {
+    tr {
+      height: 64px;
+      background-color: var(--bs-primary);
+      color: var(--bs-light);
+
+      th {
+        padding-left: $dynamicTableDefaultPadding;
+        padding-right: $dynamicTableDefaultPadding;
+      }
+    }
+  }
+
+  tbody {
+    border-right: $dynamicTableBorderColor;
+    border-left: $dynamicTableBorderColor;
+
+    td,
+    tr {
+      padding: calc($dynamicTableDefaultPadding * 2) $dynamicTableDefaultPadding;
+    }
+
+    td {
+      border-top: $dynamicTableBorderColor;
+      border-bottom: $dynamicTableBorderColor;
+    }
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .dynamic-table {
+    display: block;
+  }
+}

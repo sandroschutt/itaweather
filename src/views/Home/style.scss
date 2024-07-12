@@ -1,0 +1,47 @@
+main {
+  .title {
+    text-align: center;
+  }
+
+  #form-city-search-homepage {
+    max-width: 50%;
+    margin: 0 auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    label {
+      width: 100%;
+      text-align: center;
+    }
+
+    .form-input-group {
+      display: flex;
+
+      input[type="text"] {
+        border-radius: var(--bs-border-radius) 0 0 var(--bs-border-radius) !important;
+      }
+
+      button {
+        border-radius: 0 var(--bs-border-radius) var(--bs-border-radius) 0 !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1141px) {
+  main {
+    width: 1140px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  main {
+    #form-city-search-homepage {
+      max-width: 100%;
+
+      label {
+        font-size: .8em;
+      }
+    }
+  }
+}

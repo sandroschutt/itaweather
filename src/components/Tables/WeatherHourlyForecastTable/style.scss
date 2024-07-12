@@ -1,0 +1,26 @@
+.weather-hourly-forecast-table {
+  width: 100%;
+
+  tr {
+    border-bottom: 0.5px solid #cecece;
+  }
+
+  td {
+    padding: 8px 0;
+    text-align: center;
+  }
+
+  .__time,
+  .__temperature {
+    font-size: 1.3em;
+  }
+
+  .__icon,
+  .__rain {
+    color: #7e7e7e;
+  }
+
+  .__icon {
+    font-size: 1.7em;
+  }
+}

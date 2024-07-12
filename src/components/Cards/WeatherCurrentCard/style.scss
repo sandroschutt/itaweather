@@ -1,0 +1,63 @@
+@mixin card-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.climate-conditions-card {
+  margin-bottom: 32px;
+
+  .__body,
+  .__preview {
+    @include card-columns;
+  }
+
+  .__body div {
+    width: 50%;
+    font-family: "Roboto";
+  }
+
+  .__preview {
+    justify-content: center;
+
+    .preview-icon,
+    .__temperature {
+      font-size: 5em;
+    }
+
+    .__temperature {
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    .__real-feel {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .climate-conditions-card {
+    width: 100%;
+
+    .__body {
+      display: block;
+    }
+
+    .__preview {
+      .__temperature {
+        margin-bottom: 0;
+        text-align: right;
+      }
+
+      .preview-icon,
+      .__temperature {
+        font-size: 5em;
+      }
+    }
+
+    .__body div {
+      width: 100%;
+    }
+  }
+}

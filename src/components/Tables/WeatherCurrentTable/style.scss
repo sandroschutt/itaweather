@@ -1,0 +1,26 @@
+.climate-condition-table {
+  width: 100%;
+
+  tr {
+    border-bottom: 1px solid #cecece;
+  }
+
+  td {
+    padding: 16px 12px;
+  }
+
+  .label,
+  .value {
+    font-family: "Roboto";
+    font-size: 1em;
+  }
+
+  .label {
+    color: #8e8e8e;
+  }
+
+  .value {
+    text-align: right;
+    font-weight: bold;
+  }
+}
