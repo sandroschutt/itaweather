@@ -1,3 +1,16 @@
+<p align="center">
+ <img src="https://github.com/sandroschutt/itaweather/blob/main/src/assets/image/itaweather-logo.webp" />
+</p>
+<br>
+<p align="center">
+ <img src="https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=for-the-badge" />
+ <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge" />
+ <img src="https://img.shields.io/badge/-Bootstrap-7952B3?logo=bootstrap&logoColor=white&style=for-the-badge" />
+ <img src="https://img.shields.io/badge/-Sass-CC6699?logo=sass&logoColor=white&style=for-the-badge" />
+</p>
+
+<p align="center"><b>Mobile first, Minimalista, Microcomponentes</b></p>
+
 # ItaWeather
 
 #### Teste para a vaga de Desenvolvedor Frontend na Zellus Tecnologias
@@ -8,6 +21,7 @@ Esta aplicação web consiste em um sistema que consome a API de dados climátic
 Apesar de disponibilizar um formulário de buscas na primeira página, a aplicação não realiza consultas na API. Qualquer valor digitado no campo de buscas retornará os dados do município de Itapetininga. Essa view foi mantida por motivos puramente estéticos.
 
 <br />
+
 ## Instalação
 Baixe o <a href="https://github.com/jgg0d/backend-teste">repositório da API</a> e rode em sua máquina local. Após instalar e configurar a API, clone este repositório para seu computador com:
 
