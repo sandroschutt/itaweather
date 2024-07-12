@@ -1,5 +1,5 @@
 <p align="center">
- <img src="https://github.com/sandroschutt/itaweather/blob/main/src/assets/image/itaweather-logo.webp" />
+ <img src="https://github.com/sandroschutt/itaweather/blob/main/src/assets/image/itaweather-logo.webp" width="300" />
 </p>
 <br>
 <p align="center">
